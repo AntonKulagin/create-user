@@ -1,0 +1,18 @@
+.list {
+  > :not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  margin-bottom: 0.5rem;
+  &__button {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background: rgb(7, 147, 200);
+    color: #fff;
+    transition: all 0.2s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        background: rgba(149, 190, 52, 1) 100%;
+      }
+    }
+  }
+}

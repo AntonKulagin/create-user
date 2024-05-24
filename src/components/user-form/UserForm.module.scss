@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 0 0 5px rgb(7, 147, 200);
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  &__input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    input {
+      padding: 0.2rem 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 0.3rem;
+      &:focus {
+        box-shadow: 0 0 5px rgb(7, 147, 200);
+      }
+      &::placeholder {
+        color: #ccc;
+      }
+    }
+  }
+  &__button {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background: rgb(7, 147, 200);
+    color: #fff;
+    transition: all 0.2s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        background: rgb(149, 190, 52) 100%;
+      }
+    }
+  }
+  &__error {
+    position: absolute;
+    left: 0.6rem;
+    bottom: -0.8rem;
+    font-size: 0.6rem;
+    color: red;
+  }
+}

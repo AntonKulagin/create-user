@@ -1,0 +1,31 @@
+.item {
+  box-shadow: 0 0 5px rgb(7, 147, 200);
+  padding: 0.3rem 0.5rem;
+  &__body {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__name {
+    position: relative;
+    flex: 0 0 40%;
+    cursor: pointer;
+    line-height: 2;
+    &::before {
+      content: 'X';
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: red;
+      display: none;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+        &::before {
+          display: block;
+        }
+      }
+    }
+  }
+}
