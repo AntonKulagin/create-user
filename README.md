@@ -1,4 +1,4 @@
-# React + Redux Toolkit + TypeScript + Vite
+# React + Redux Toolkit + TypeScript + Vite + Jest
 - создать пользователя
 - удалить пользователя
 - получить список пользователей
